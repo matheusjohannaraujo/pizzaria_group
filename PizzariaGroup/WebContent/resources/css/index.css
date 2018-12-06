@@ -1,0 +1,495 @@
+/* INICIO PRESET */
+@charset "UTF-8";
+@import url("./fonts/fonts.css");
+@import url("./font-awesome-4.7.0/css/font-awesome.min.css");
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
+}
+
+a{
+	display: block;
+	text-decoration: none;
+}
+
+html{
+    background: #fed;
+    background: linear-gradient(to bottom, #eee 0.2%, #570c0c 109.8%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+html, html > body{
+    height: 100%;
+}
+
+html > body > div#conteiner{
+    margin: 0 auto;
+    max-width: 1060px;
+    min-height: 80%;
+}
+
+.floatClear{
+    display: block;
+    clear: both;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    font-size: 0;
+    visibility: hidden;
+}
+
+.floatClear:after, .floatClear:before{
+    content: " ";    
+}
+/* FIM PRESET */
+
+/* INICIO HEADER */
+header{
+    padding: 10px;
+}
+
+header > h1 > a{
+	transition: 2s;
+    color: #800;
+    text-align: center;
+}
+
+header > h1 > a:hover{
+    transition: 1s;
+    color: rgb(255, 238, 170);
+    text-shadow: 1px 1px 1px #555;
+    cursor: pointer;
+}
+
+header > nav{
+    padding: 10px;
+}
+
+header > nav > ul > li{
+	list-style: none;
+}
+
+header > nav > ul > li > a{
+    transition: 2s;
+    font-size: 1.2em;
+    color: #800;
+    text-shadow: 1px 1px 1px #888;
+    margin: 5px 0;
+}
+
+header > nav > ul > li > a:hover{
+    transition: 1s;
+    cursor: pointer;
+    color: rgb(255, 238, 170);
+    text-shadow: 1px 1px 1px #000;
+}
+
+header > nav > ul > li nav{
+    display: none;
+}
+
+header > nav > ul > li:hover nav{
+	position: absolute;
+    display: block;
+}
+
+header > nav > ul > li nav ul{
+	padding-left: 20px;
+	list-style: none;
+}
+
+header > nav > ul > li:hover nav ul li a{
+	transition: 1s;
+	color: rgb(255, 238, 170);
+	font-size: .85em;
+	margin: 4px 0;
+	cursor: pointer;
+}
+
+header > nav > ul > li nav ul li a:hover{
+	transition: .5s;
+	color: #800;
+	text-shadow: 1px 1px 1px #888;
+}
+/* FIM HEADER */
+
+
+/* INICIO SECTION */
+section{
+    padding: 10px;
+}
+
+section > h2{
+    padding: 10px;
+    text-align: left;
+    color: #800;
+}
+
+section > div{
+    margin-top: 10px;
+}
+
+section.s0{
+    clear: both;
+}
+
+section.s0 > div{
+    text-align: center;
+    padding: 5px;
+}
+
+section.s0 > div > img{
+    width: 85%;
+}
+
+section.s1{
+	max-width: 370px;
+}
+
+section.s1 > h2{
+	text-align: center;
+}
+
+section.s1 > div{
+    text-align: center;
+    padding: 5px;
+}
+
+section.s1 > div > figure{
+	text-align: center;
+    padding: 10px;
+    background: rgba(150, 0, 0, .55);
+    border-radius: 20px;
+    transition: 1s;
+    margin: 7px 5px;
+}
+
+section.s1 > div > figure:hover{
+    transition: .5s;
+    background: rgb(150, 0, 0);
+}
+
+section.s1 > div > figure > img{
+    width: 100%;
+}
+
+section.s1 > div > figure > p{
+    text-align: center;
+    color: #fff;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+section.s2 > div{
+    padding: 10px;
+}
+
+section.s2 > div > p{
+    padding: 5px;
+    color: #fff;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px #444;
+}
+
+section.s3 > h2{
+    text-align: center;
+}
+
+section.s3 > div > form{
+    width: 90%;
+    max-width: 500px;
+    margin: 0 auto;
+    border-radius: 5px;
+    background: rgba(136, 0, 0, .5);
+    padding: 10px;
+}
+
+section.s3 > div > form > input[type='text'], section.s3 > div > form > textarea{
+    padding: 5px;
+    margin-bottom: 5px;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid #444;
+}
+
+section.s3 > div > form > textarea{
+    resize: vertical;
+}
+
+section.s3 > div > form > input[type='reset'], section.s3 > div > form > input[type='submit']{
+    padding: 5px;
+    border-radius: 5px;
+    background: #fff;
+    font-weight: bold;
+    border: 1px solid #444;
+    cursor: pointer;
+    transition: .5s;
+}
+
+section.s3 > div > form > input[type='reset']:hover, section.s3 > div > form > input[type='submit']:hover{
+    transition: .25s;
+    border: 2px dotted #444;
+    background: rgb(255, 238, 170);
+}
+
+section.s4{
+	
+}
+
+section.s4 > h2{
+    text-align: center;
+}
+
+section.s4 > div > form{
+    width: 90%;
+    max-width: 400px;
+    margin: 0 auto;
+    border-radius: 5px;
+    background: rgba(136, 0, 0, .5);
+    padding: 10px;
+}
+
+section.s4 > div > form > input[type='text'], section.s4 > div > form > select, section.s4 > div > form > input[type='number']{
+    padding: 5px;
+    margin-bottom: 5px;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid #444;
+}
+
+section.s4 > div > form > input[type='reset'], section.s4 > div > form > input[type='submit']{
+    padding: 5px;
+    border-radius: 5px;
+    background: #fff;
+    font-weight: bold;
+    border: 1px solid #444;
+    cursor: pointer;
+    transition: .5s;
+}
+
+section.s4 > div > form > input[type='reset']:hover, section.s4 > div > form > input[type='submit']:hover{
+    transition: .25s;
+    border: 2px dotted #444;
+    background: rgb(255, 238, 170);
+}
+
+section.s5 > h2{
+    text-align: center;
+}
+
+section.s5 > h2 > button{
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    background: rgba(136, 0, 0, .7);
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 3px 3px 4px rgba(136, 0, 0, 1);
+    transition: .5s;
+}
+
+section.s5 > h2 > button:hover{
+	box-shadow: 1px 1px 2px rgba(136, 0, 0, 1);	
+}
+
+section.s5 > div > form{
+    width: 90%;
+    max-width: 400px;
+    margin: 0 auto;
+    border-radius: 5px;
+    background: rgba(136, 0, 0, .5);
+    padding: 10px;
+}
+
+section.s5 > div > form > input[type='text'], section.s5 > div > form > input[type='number'], section.s5 > div > form > input[type='password']{
+    padding: 5px;
+    margin-bottom: 5px;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid #444;
+}
+
+section.s5 > div > form > input[type='reset'], section.s5 > div > form > input[type='submit']{
+    padding: 5px;
+    border-radius: 5px;
+    background: #fff;
+    font-weight: bold;
+    border: 1px solid #444;
+    cursor: pointer;
+    transition: .5s;
+}
+
+section.s5 > div > form > input[type='reset']:hover, section.s5 > div > form > input[type='submit']:hover{
+    transition: .25s;
+    border: 2px dotted #444;
+    background: rgb(255, 238, 170);
+}
+/* FIM SECTION */
+
+
+/* INICIO FOOTER */
+footer{
+    padding: 10px;   
+}
+
+footer > nav{
+    padding: 10px;
+}
+
+footer > nav > ul{
+    text-align: center;
+}
+
+footer > nav > ul > li{
+	padding: 2px;
+    list-style: none;
+    transition: 2s;
+}
+
+footer > nav > ul > li:hover{
+	transition: 1s;
+}
+
+footer > nav > ul > li > a{
+    transition: 2s;
+    color: white;
+    font-size: 1.1em;
+    text-shadow: 1px 1px 1px #555;   
+}
+
+footer > nav > ul > li > a:hover{
+    transition: 1s; 
+    cursor: pointer;
+    color: rgb(255, 238, 170);
+}
+/* FIM FOOTER */
+
+
+/* INICIO MEDIA QUERIES */
+@media screen and (max-width: 375px){
+    header > label{
+        display: none !important;
+    }
+
+    header > nav{
+        display: block !important;
+    }
+}
+
+@media screen and (min-width: 375px) and (max-width: 750px){
+    header > label{
+        cursor: pointer;
+        position: absolute;
+        top: 0;
+        left: 0;
+        font-size: 1.3em !important;
+        border-radius: 0 0 10px 0;
+        background: #800;
+        padding: 10px;
+        text-shadow: 1px 1px 1px #000;
+        color: #fff;   
+    }
+
+    header > label.fa-times{
+        display: none;
+    }
+
+    header > nav{
+        display: none;
+    }
+}
+
+@media screen and (min-width: 750px){
+    /* INICIO HEADER */
+    header > label{
+        display: none !important;
+    }
+    
+    header > nav{
+        display: block !important;
+        text-align: center;    
+    }
+    
+    header > nav > ul > li{
+        padding: 3px;
+        margin: 3.3px 1.5px 3.3px 1.5px;
+        display: inline-block;
+        transition: 1s;
+    }
+    
+    header > nav > ul > li:hover{
+        color: #800;
+        border: 1px dashed transparent;
+        border-bottom-color: #800;
+    }
+ 
+    header > nav > ul > li nav ul li a{
+		text-shadow: 1px 1px 1px #888;
+	}
+	
+	header > nav > ul > li nav ul li a:hover{
+		text-shadow: 1px 1px 1px #000;
+	}
+    /* FIM HEADER */
+    
+    /* INICIO FOOTER */
+    footer > nav > ul > li{
+        padding: 3px;
+        border: 2px solid #bbb;
+        border-radius: 5px;
+        margin: 3.3px 1.5px 3.3px 1.5px;
+        display: inline-block;
+    }
+    
+    footer > nav > ul > li:hover{
+    	border: 2px dashed #800;
+    	background: rgb(255, 238, 170);
+    }
+    
+    footer > nav > ul > li > a:hover{
+        color: #800;        
+    }
+    /* FIM FOOTER */
+}
+
+@media screen and (min-width: 1125px){
+    /* INICIO HEADER */
+    header > h1{
+        padding: 6px 10px;
+        display: inline-block;
+        float: left;
+    }
+
+    header > h1:hover{
+        color: #800;
+    }
+
+    header > nav{
+        display: inline-block;
+        float: right;
+    }
+    
+    header > nav > ul > li{
+        border: none;
+    }
+    
+    header > nav > ul > li:hover{
+        background: transparent;
+    }
+    /* FIM HEADER */
+    
+    /* INICIO SECTION */
+    section.s1{
+    	float: left;
+    	width: 370px;
+    }
+    section.s4{
+        float: left;
+    }
+    /* FIM SECTION */
+}
