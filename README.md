@@ -1,5 +1,7 @@
 https://github.com/matheusjohannaraujo/pizzaria_group
 
+Pizzaria Group - Sistema online, desenvolvido em Java usando o Spring MVC.
+
 Faculdade: Instituto Pernambucano de Ensino Superior
 Disciplina: Aplicação Linguagem de Programação Orientada a Objetos
 Professor/Ms.: Rômulo Lima
